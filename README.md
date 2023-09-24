@@ -1,3 +1,4 @@
+
 # week-1-code-challenge
 
 # Challenge 1: Student Grade Generator (Toy Problem)
@@ -9,7 +10,7 @@ C: 50-59
 D: 40-49
 E: Less than 40
 ## Detailed Steps:
-Define the Function:
+* Define the Function:
 
 Start by creating a function called generateStudentGrade.
 This function will take one parameter, which is the studentMark.
@@ -17,7 +18,7 @@ Example:
 function generateStudentGrade(studentMark) {
   // Implementation will go here
 }
-Prompt User for Input:
+* Prompt User for Input:
 
 Use the prompt function to get the user's input for the student's mark.
 Parse the input to ensure it's a valid number between 0 and 100.
@@ -28,7 +29,7 @@ function generateStudentGrade() {
   // Add validation for valid input range (0-100)
   // ...
 }
-Grade Calculation:
+* Grade Calculation:
 
 Implement logic to calculate the grade based on the input mark.
 Example:
@@ -47,7 +48,7 @@ function generateStudentGrade() {
     return 'E';
   }
 }
-Handle Invalid Inputs:
+* Handle Invalid Inputs:
 
 Consider adding error handling to handle cases where the user inputs a value outside the valid range (0-100).
 Example:
@@ -61,7 +62,7 @@ function generateStudentGrade() {
   // Rest of the grade calculation logic
   // ...
 }
-Display the Grade:
+ * Display the Grade:
 
 Finally, display the calculated grade to the user.
 Example:
@@ -86,7 +87,7 @@ function generateStudentGrade() {
   }
   alert(`The student's grade is: ${grade}`);
 }
-Testing:
+* Testing:
 
 You can now call the function to test it.
 
@@ -95,7 +96,7 @@ Involved writing a program that takes the speed of a car as input e.g 80. If the
 
    > For example, if the speed is 80, it prints: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 ## Detailed Steps:
-Define the Function:
+* Define the Function:
 
 Start by creating a function called speedDetector.
 This function will take one parameter, which is the carSpeed.
@@ -104,7 +105,7 @@ Example:
 function speedDetector(carSpeed) {
   // Implementation will go here
 }
-Prompt User for Input:
+* Prompt User for Input:
 
 Use the prompt function to get the user's input for the car's speed.
 Parse the input to ensure it's a valid number.
@@ -115,7 +116,7 @@ function speedDetector() {
   // Add validation for valid input
   // ...
 }
-Demerit Calculation:
+* Demerit Calculation:
 
 Implement logic to calculate the demerit points based on the speed.
 Example:
@@ -133,7 +134,7 @@ function speedDetector() {
     }
   }
 }
-Handle Invalid Inputs:
+* Handle Invalid Inputs:
 
 Consider adding error handling to handle cases where the user inputs a non-numeric value.
 Example:
@@ -147,7 +148,7 @@ function speedDetector() {
   // Rest of the demerit calculation logic
   // ...
 }
-Testing:
+* Testing:
 
 You can now call the function to test it.
 Example:
@@ -162,7 +163,7 @@ https://www.aren.co.ke/payroll/taxrates.htm
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 ## Detailed Steps:
-Gather Inputs:
+* Gather Inputs:
 
 Start by creating a function called calculateNetSalary.
 Use prompt to get the user's input for basic salary and benefits.
@@ -175,7 +176,7 @@ function calculateNetSalary() {
   // Add validation for valid input
   // ...
 }
-Retrieve Tax Rates:
+* Retrieve Tax Rates:
 
 Go to the provided links and gather the tax rates for PAYE.
 You can write them as constants in your program.
@@ -185,7 +186,7 @@ const PAYE_RATES = [
   { min: 0, max: 24000, rate: 10.0 },
   // Add other ranges and rates
 ];
-Calculate PAYE (Tax):
+ - Calculate PAYE (Tax):
 
 Implement logic to calculate the PAYE based on the provided tax rates and the total salary (basic salary + benefits).
 Example:
@@ -205,7 +206,7 @@ function calculateNetSalary() {
   }
   // ...
 }
-Calculate NHIF and NSSF Deductions:
+- Calculate NHIF and NSSF Deductions:
 
 Go to the provided links and gather the NHIF and NSSF rates.
 Implement logic to calculate the deductions based on the provided rates.
@@ -223,7 +224,7 @@ function calculateNetSalary() {
   // Implement NSSF deduction calculation logic
   // ...
 }
-Calculate Gross Salary and Net Salary:
+- Calculate Gross Salary and Net Salary:
 
 Use the inputs and deductions to calculate the gross salary and net salary.
 Example:
@@ -237,7 +238,7 @@ function calculateNetSalary() {
   let netSalary = grossSalary - nhif - nssf;
   // ...
 }
-Display Results:
+* Display Results:
 
 Use alert or console.log to display the calculated values to the user.
 Example:
@@ -248,7 +249,7 @@ function calculateNetSalary() {
   alert(`Gross Salary: ${grossSalary} Ksh`);
   alert(`Net Salary: ${netSalary} Ksh`);
 }
-Testing:
+* Testing:
 
 You can now call the function to test it.
 Example:
